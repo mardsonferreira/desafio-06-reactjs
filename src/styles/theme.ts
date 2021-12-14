@@ -8,12 +8,12 @@ export const theme = extendTheme({
             "500": "#FFBA08",
         },
         gray: {
-            "50": "#F5F8FA",
-            "300": "#DADADA",
-            "500": "#999999"
+            "50": "#F5F8FA", // Light Headings and Text
+            "300": "#DADADA", // Light info
+            "500": "#999999" // Dark info
         },
         green: {
-            "900": "#47585B",
+            "900": "#47585B", // Dark Headings and Text
         }
     },
     fonts: {
