@@ -1,4 +1,4 @@
-import { Box, Flex, Grid, GridItem } from "@chakra-ui/react";
+import { Flex, SimpleGrid } from "@chakra-ui/react";
 
 import { TravelType } from "../TravelType";
 
@@ -11,19 +11,10 @@ export const TravelTypes = () => {
         { id: "5", name: "e mais...", src: "../images/earth.svg" },
     ];
     return (
-        <Flex py="20">
-            <Grid
-                templateColumns="repeat(5, 1fr)"
-                gap="4"width="100%"
-                mx="auto"
-                px="20"
-            >
-                {travelTypes.map((tp) => (
-                    <GridItem key={tp.id}>
-                        <TravelType key={tp.id} name={tp.name} img={tp.src} />
-                    </GridItem>
-                ))}
-            </Grid>
-        </Flex>
+        <SimpleGrid columns={5} spacing={8} px="32" py="16">
+            {travelTypes.map((tp) => (
+                <TravelType key={tp.id} name={tp.name} img={tp.src} />
+            ))}
+        </SimpleGrid>
     );
 };

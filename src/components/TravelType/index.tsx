@@ -7,15 +7,11 @@ export const TravelType: React.FC<TravelTypeProps> = ({
     name,
 }: TravelTypeProps) => {
     return (
-        <Flex
-            direction="column"
-            justifyContent="space-between"
-            align="center"
-        >
-            <Stack spacing="5">
+        <Flex justifyContent="center">
+            <Stack spacing="4">
                 <Image src={img} alt={name} width="85" height="85" />
 
-                <Heading
+                <Heading as="h1"
                     color={theme.colors.green[900]}
                     fontWeight="semibold"
                     fontSize="24"
@@ -24,7 +20,6 @@ export const TravelType: React.FC<TravelTypeProps> = ({
                 </Heading>
 
             </Stack>
-
         </Flex>
     );
 };
