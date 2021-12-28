@@ -48,7 +48,7 @@ export function Banner() {
                     alt="Airplane"
                     position="absolute"
                     right={["4", "36"]}
-                    top="32"
+                    top="40"
                 />
             )}
         </Flex>

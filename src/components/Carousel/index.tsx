@@ -1,61 +1,80 @@
-import { Flex, Heading, Text, theme } from "@chakra-ui/react";
+import { color, Flex } from "@chakra-ui/react";
 import SwiperCore, { Navigation, Pagination, Scrollbar } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import 'swiper/css/scrollbar';
+import "swiper/css/scrollbar";
+
+import { CarouselItem } from "./CarouselItem";
 
 SwiperCore.use([Navigation, Pagination, Scrollbar]);
 
 export function Carousel() {
+    const continents = [
+        {
+            id: 1,
+            title: "Europa",
+            subtitle:
+                "É composto por 50 países e possui o maior bloco econômico do mundo.",
+            url: "/images/europa.svg",
+        },
+        {
+            id: 2,
+            title: "América do Norte",
+            subtitle:
+                "O terceiro maior continente da Terra cobre uma área de 24,7 milhões de km²",
+            url: "/images/north_america.jpg",
+        },
+        {
+            id: 3,
+            title: "América do Sul",
+            subtitle:
+                "A América do Sul faz fronteira com três oceanos e Mar do Caribe.",
+            url: "/images/south_america.jpg",
+        },
+        {
+            id: 4,
+            title: "Ásia",
+            subtitle:
+                "A Ásia cobre uma área que corresponde a cerca de 30% da área total da Terra.",
+            url: "/images/asia.jpg",
+        },
+        {
+            id: 5,
+            title: "África",
+            subtitle:
+                "A África é o segundo maior continente do mundo em área e população.",
+            url: "/images/africa.jpg",
+        },
+        {
+            id: 6,
+            title: "Oceania",
+            subtitle:
+                "A Oceania cobre uma área de aproximadamente 100 milhões de km².",
+            url: "/images/aceania.jpg",
+        },
+    ];
+
     return (
         <Flex
             w="100%"
             h={["250px", "450px"]}
-            maxW="1240px"
             mx="auto"
+            px="36"
             mb={["5", "10"]}
         >
-            <Swiper
-                slidesPerView={1}
-                navigation={true}
-                pagination={true}
-            >
-                <SwiperSlide>
-                    <Flex
-                        w="100%"
-                        h="100%"
-                        align="center"
-                        justify="center"
-                        direction="column"
-                        bgImage="url('/images/Background.svg')"
-                        bgPosition="100% 30%"
-                        bgRepeat="no-repeat"
-                        bgSize="cover"
-                    >
-                        <Heading>Europa</Heading>
-                        <Text>O continente mais antigo</Text>
-                    </Flex>
-                </SwiperSlide>
-
-                <SwiperSlide>
-                    <Flex
-                        w="100%"
-                        h="100%"
-                        align="center"
-                        justify="center"
-                        direction="column"
-                        bgImage="url('/images/Background.svg')"
-                        bgPosition="100% 30%"
-                        bgRepeat="no-repeat"
-                        bgSize="cover"
-                        textAlign="center"
-                    >
-                        <Heading>Slider</Heading>
-                    </Flex>
-                </SwiperSlide>
+            <Swiper slidesPerView={1} navigation={true} pagination={true}>
+                {continents.map((continent) => (
+                    <SwiperSlide key={continent.id}>
+                        <CarouselItem
+                            title={continent.title}
+                            subtitle={continent.subtitle}
+                            url={continent.url}
+                        />
+                    </SwiperSlide>
+                ))}
             </Swiper>
         </Flex>
     );

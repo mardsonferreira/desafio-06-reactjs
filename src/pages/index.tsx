@@ -7,21 +7,23 @@ import { Carousel } from "../components/Carousel";
 
 export default function Home() {
     return (
-        <Flex direction="column" height="100vh">
+        <Flex direction="column">
             <Header />
+
             <Banner />
 
             <TravelTypes />
 
             <Box
-                w={{ base: "60px", xl: "90px" }}
+                w="20"
                 h="2px"
                 bg={theme.colors.gray[900]}
                 mx="auto"
+                my="4"
             />
 
-            <Box mt="20">
-                <Heading textAlign="center" fontSize="32" fontWeight="medium">
+            <Box my="8">
+                <Heading textAlign="center" fontSize={36} fontWeight="medium">
                     Vamos nessa?
                     <br />
                     Então escolha seu continente
