@@ -22,10 +22,16 @@ export function Carousel({ continents }: Continents) {
             px="36"
             mb={["5", "10"]}
         >
-            <Swiper className="mySwiper" slidesPerView={1} navigation={true} pagination={true}>
+            <Swiper
+                className="mySwiper"
+                slidesPerView={1}
+                navigation={true}
+                pagination={true}
+            >
                 {continents.map((continent) => (
                     <SwiperSlide key={continent.id}>
                         <CarouselItem
+                            id={continent.id}
                             title={continent.title}
                             subtitle={continent.subtitle}
                             url={continent.url}
