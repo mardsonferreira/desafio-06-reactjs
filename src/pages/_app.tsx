@@ -5,6 +5,11 @@ import { theme } from "../styles/theme";
 
 import "../styles/carousel.scss";
 
+import "swiper/scss";
+import "swiper/scss/navigation";
+import "swiper/scss/pagination";
+import "swiper/scss/scrollbar";
+
 function MyApp({ Component, pageProps }: AppProps) {
     return (
         <ChakraProvider theme={theme}>

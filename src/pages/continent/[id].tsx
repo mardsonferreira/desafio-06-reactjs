@@ -1,6 +1,6 @@
 import { useRouter } from "next/router";
 
-export function Continent() {
+export default function Continent() {
     // const router = useRouter();
     // const { id } = router.query;
 

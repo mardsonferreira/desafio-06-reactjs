@@ -1,11 +1,6 @@
-import { color, Flex } from "@chakra-ui/react";
+import { Flex } from "@chakra-ui/react";
 import SwiperCore, { Navigation, Pagination, Scrollbar } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
-
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
-import "swiper/css/scrollbar";
 
 import { Continents } from "./types";
 

@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { GetStaticProps } from "next";
 import { Flex, Box, theme, Heading } from "@chakra-ui/react";
 
 import { Header } from "../components/Header";
@@ -7,12 +7,6 @@ import { TravelTypes } from "../components/TravelTypes";
 import { Carousel } from "../components/Carousel";
 
 import { api } from "../services/api";
-import { makeServer } from "../services/server";
-
-if (process.env.NODE_ENV === "development") {
-    makeServer({ environment: "development" });
-}
-
 export interface Continent {
     id: number;
     title: string;
@@ -20,19 +14,11 @@ export interface Continent {
     url: string;
 }
 
-export default function Home() {
-    const [continents, setContinents] = useState<Continent[]>([]);
+export interface HomeProps {
+    continents: Continent[];
+}
 
-    useEffect(() => {
-        async function loadContinents() {
-            const response = await api.get("/continents");
-            const continents = response.data.continents;
-            setContinents(continents);
-        }
-
-        loadContinents();
-    }, []);
-
+export default function Home({ continents }: HomeProps) {
     return (
         <Flex direction="column">
             <Header />
@@ -55,3 +41,15 @@ export default function Home() {
         </Flex>
     );
 }
+
+export const getStaticProps: GetStaticProps = async () => {
+    const response = await api.get("/continents");
+
+    const continents = response.data;
+
+    return {
+        props: {
+            continents,
+        },
+    };
+};
