@@ -45,7 +45,14 @@ export default function Home({ continents }: HomeProps) {
 export const getStaticProps: GetStaticProps = async () => {
     const response = await api.get("/continents");
 
-    const continents = response.data;
+    const continents = response.data.map((continent) => {
+        return {
+            id: continent.id,
+            title: continent.title,
+            subtitle: continent.subtitle,
+            url: continent.url,
+        };
+    });
 
     return {
         props: {
