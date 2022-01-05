@@ -32,6 +32,7 @@ export interface Continent {
     description: string;
     totalCountries: number;
     totalLanguages: number;
+    totalCities: number;
     banner: string;
     countries: Country[];
 }
@@ -56,7 +57,7 @@ export default function Continent({ continent }: ContinentProps) {
             >
                 <Heading
                     mb="16"
-                    ml="24"
+                    ml="32"
                     fontSize="48"
                     fontWeight="semibold"
                     color={theme.colors.gray[300]}
@@ -65,7 +66,7 @@ export default function Continent({ continent }: ContinentProps) {
                 </Heading>
             </Flex>
 
-            <Flex direction="column" mx="24">
+            <Flex direction="column" mx="32">
                 <Flex
                     justifyContent="space-between"
                     alignItems="center"
@@ -130,7 +131,9 @@ export default function Continent({ continent }: ContinentProps) {
                                 >
                                     cidades +100
                                 </Text>
-                                <Tooltip label="Information">
+                                <Tooltip
+                                    label={`${continent.totalCities} cidades`}
+                                >
                                     <InfoOutlineIcon
                                         boxSize={4}
                                         cursor="pointer"

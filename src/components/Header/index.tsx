@@ -23,7 +23,7 @@ export function Header() {
                         color={theme.colors.gray[300]}
                         position="absolute"
                         top="12"
-                        left="16"
+                        left="28"
                     />
                 )}
                 <Image

@@ -8,6 +8,7 @@
             "description": "Europa é um dos seis continentes do mundo, sendo em extensão territorial o segundo menor. O continente é banhado, ao norte, pelo Mar Ártico; ao sul, pelo Mar Mediterrâneo e o Mar Negro; a oeste, pelo Oceano Atlântico; e, a leste, pelo Mar Cáspio. A Europa é também conhecida como o “Velho Mundo” e considerada o berço da cultura ocidental.",
             "totalCountries": 50,
             "totalLanguages": 24,
+            "totalCities": 800,
             "banner": "/images/europa_banner.svg",
             "countries": [
                 {
@@ -51,45 +52,233 @@
             "title": "América do Norte",
             "subtitle": "O terceiro maior continente da Terra cobre uma área de 24,7 milhões de km²",
             "url": "/images/north_america.jpg",
-            "description": "",
+            "description": "A América do Norte está localizada no extremo norte das Américas e é composta por apenas três países: Estados Unidos, Canadá e México, além de territórios de domínios europeus, como a Groelândia (pertencente ao Reino da Dinamarca, com representação no parlamento) e Bermudas (dependência britânica).",
             "totalCountries": 23,
-            "totalLanguages": 493
+            "totalLanguages": 493,
+            "totalCities": 800,
+            "banner": "/images/north_america_banner.jpg",
+            "countries": [
+              {
+                "id": 1,
+                "name": "Estados Unidos",
+                "flag": "https://hatscripts.github.io/circle-flags/flags/us.svg",
+                "capital": "New York",
+                "image": "/images/north_america/new_york.jpeg"
+              },
+              {
+                "id": 2,
+                "name": "Estados Unidos",
+                "flag": "https://hatscripts.github.io/circle-flags/flags/us.svg",
+                "capital": "Los Angeles",
+                "image": "/images/north_america/los_angeles.jpeg"
+              },
+              {
+                "id": 3,
+                "name": "Canadá",
+                "flag": "https://hatscripts.github.io/circle-flags/flags/ca.svg",
+                "capital": "Montreal",
+                "image": "/images/north_america/montreal.jpeg"
+              },
+              {
+                "id": 4,
+                "name": "Canadá",
+                "flag": "https://hatscripts.github.io/circle-flags/flags/ca.svg",
+                "capital": "Toronto",
+                "image": "/images/north_america/toronto.jpeg"
+              },
+              {
+                "id": 5,
+                "name": "México",
+                "flag": "https://hatscripts.github.io/circle-flags/flags/mx.svg",
+                "capital": "Cidade do México",
+                "image": "/images/north_america/mexico_city.jpeg"
+              },
+              {
+                "id": 6,
+                "name": "México",
+                "flag": "https://hatscripts.github.io/circle-flags/flags/mx.svg",
+                "capital": "Guadalajara",
+                "image": "/images/north_america/guadalajara.jpeg"
+              }
+            ]
         },
         {
             "id": 3,
             "title": "América do Sul",
             "subtitle": "A América do Sul faz fronteira com três oceanos e Mar do Caribe.",
             "url": "/images/south_america.jpg",
-            "description": "",
+            "description": "Com uma extensão de cerca de 17,8 milhões de km², a América do Sul comporta 6% da população mundial dividida em 12 países e 7 territórios. São eles a Argentina, Bolívia, Brasil, Chile, Colômbia, Equador, Guiana, Paraguai, Peru, Suriname, Uruguai e Venezuela e, os territórios da Guiana Francesa, Ilha de Páscoa, Ilhas Galápagos, Ilhas Geórgia e Sandwich e Ilhas Malvinas. Limita-se ao norte com a América Central, à leste com o oceano atlântico e à oeste com o oceano pacífico.",
             "totalCountries": 12,
-            "totalLanguages": 448
+            "totalLanguages": 448,
+            "totalCities": 800,
+            "banner": "/images/south_america_banner.jpg",
+            "countries": [
+              {
+                "id": 1,
+                "name": "Brasil",
+                "flag": "https://hatscripts.github.io/circle-flags/flags/br.svg",
+                "capital": "Fortaleza",
+                "image": "/images/south_america/fortaleza.jpeg"
+              },
+              {
+                "id": 2,
+                "name": "Argentina",
+                "flag": "https://hatscripts.github.io/circle-flags/flags/ar.svg",
+                "capital": "Buenos Aires",
+                "image": "/images/south_america/buenos_aires.jpeg"
+              },
+              {
+                "id": 3,
+                "name": "Uruguai",
+                "flag": "https://hatscripts.github.io/circle-flags/flags/uy.svg",
+                "capital": "Montevideo",
+                "image": "/images/south_america/montevideo.jpeg"
+              },
+              {
+                "id": 4,
+                "name": "Chile",
+                "flag": "https://hatscripts.github.io/circle-flags/flags/cl.svg",
+                "capital": "Santiago",
+                "image": "/images/south_america/santiago.jpeg"
+              },
+              {
+                "id": 5,
+                "name": "Peru",
+                "flag": "https://hatscripts.github.io/circle-flags/flags/pe.svg",
+                "capital": "Lima",
+                "image": "/images/south_america/lima.jpeg"
+              },
+              {
+                "id": 6,
+                "name": "Paraguai",
+                "flag": "https://hatscripts.github.io/circle-flags/flags/py.svg",
+                "capital": "Assunção",
+                "image": "/images/south_america/assuncao.jpeg"
+              }
+            ]
         },
         {
             "id": 4,
             "title": "Ásia",
             "subtitle": "A Ásia cobre uma área que corresponde a cerca de 30% da área total da Terra.",
             "url": "/images/asia.jpg",
-            "description": "",
+            "description": "A Ásia é o maior continente em área terrestre do mundo, estando boa parte do continente localizado no Hemisfério Norte. Além de ser o mais extenso, é também o mais populoso, habitando nele cerca de três quintos da população mundial. A Ásia é multicultural, abrigando diversas culturas, etnias, religiões e tradições.",
             "totalCountries": 48,
-            "totalLanguages": 2300
+            "totalLanguages": 2300,
+            "totalCities": 800,
+            "banner": "/images/asia_banner.jpg",
+            "countries": [
+              {
+                "id": 1,
+                "name": "Tailândia",
+                "flag": "https://hatscripts.github.io/circle-flags/flags/th.svg",
+                "capital": "Bangcoc",
+                "image": "/images/asia/bangcoc.jpg"
+              },
+              {
+                "id": 2,
+                "name": "Cingapura",
+                "flag": "https://hatscripts.github.io/circle-flags/flags/sg.svg",
+                "capital": "Cingapura",
+                "image": "/images/asia/singapore.jpeg"
+              },
+              {
+                "id": 3,
+                "name": "Japão",
+                "flag": "https://hatscripts.github.io/circle-flags/flags/jp.svg",
+                "capital": "Tóquio",
+                "image": "/images/asia/tokyo.jpg"
+              },
+              {
+                "id": 4,
+                "name": "Emirados Árabes",
+                "flag": "https://hatscripts.github.io/circle-flags/flags/ae.svg",
+                "capital": "Dubai",
+                "image": "/images/asia/dubai.jpeg"
+              }
+            ]
         },
         {
             "id": 5,
             "title": "África",
             "subtitle": "A África é o segundo maior continente do mundo em área e população.",
             "url": "/images/africa.jpg",
-            "description": "",
+            "description": "África é um dos seis continentes do mundo, sendo o terceiro maior em extensão territorial. O território estende-se por mais de 30 milhões de km², ocupando, aproximadamente, 20% da área continental da Terra. No continente vive mais de um bilhão de habitantes, fazendo dele o segundo mais populoso entre os demais. A África é conhecida pela sua pluralidade étnica e cultural, e, por meio de uma história milenar, é capaz de contar a história de toda a humanidade.",
             "totalCountries": 54,
-            "totalLanguages": 2000
+            "totalLanguages": 2000,
+            "totalCities": 800,
+            "banner": "/images/africa_banner.jpg",
+            "countries": [
+              {
+                "id": 1,
+                "name": "Nigéria",
+                "flag": "https://hatscripts.github.io/circle-flags/flags/ng.svg",
+                "capital": "Lagos",
+                "image": "/images/africa/lagos.jpeg"
+              },
+              {
+                "id": 2,
+                "name": "Egito",
+                "flag": "https://hatscripts.github.io/circle-flags/flags/eg.svg",
+                "capital": "Cairo",
+                "image": "/images/africa/cairo.jpeg"
+              },
+              {
+                "id": 3,
+                "name": "República Democrática do Congo",
+                "flag": "https://hatscripts.github.io/circle-flags/flags/cd.svg",
+                "capital": "Kinshasa",
+                "image": "/images/africa/kinshasa.jpg"
+              },
+              {
+                "id": 4,
+                "name": "Quénia",
+                "flag": "https://hatscripts.github.io/circle-flags/flags/ke.svg",
+                "capital": "Nairóbi",
+                "image": "/images/africa/nairobi.jpg"
+              }
+            ]
         },
         {
             "id": 6,
             "title": "Oceania",
             "subtitle": "A Oceania cobre uma área de aproximadamente 100 milhões de km².",
             "url": "/images/aceania.jpg",
-            "description": "",
+            "description": " Oceania é um continente situado entre os oceanos Índico e Pacífico, a sudeste da Ásia. A maior parte de suas terras fica no Hemisfério Sul do planeta. É composto por 14 países e ilhas e territórios pertencentes a outros países, tanto oceânicos quanto de outros continentes. A maior e mais populosa das nações é a Austrália, que consiste também na principal economia do continente.",
             "totalCountries": 14,
-            "totalLanguages": 5000
+            "totalLanguages": 5000,
+            "totalCities": 800,
+            "banner": "/images/oceania_banner.jpg",
+            "countries": [
+              {
+                "id": 1,
+                "name": "Austrália",
+                "flag": "https://hatscripts.github.io/circle-flags/flags/au.svg",
+                "capital": "Sidney",
+                "image": "/images/oceania/sidney.jpeg"
+              },
+              {
+                "id": 2,
+                "name": "Austrália",
+                "flag": "https://hatscripts.github.io/circle-flags/flags/au.svg",
+                "capital": "Melbourne",
+                "image": "/images/oceania/melbourne.jpeg"
+              },
+              {
+                "id": 3,
+                "name": "Indonésia",
+                "flag": "https://hatscripts.github.io/circle-flags/flags/id.svg",
+                "capital": "Manado",
+                "image": "/images/oceania/manado.jpg"
+              },
+              {
+                "id": 4,
+                "name": "Indonésia",
+                "flag": "https://hatscripts.github.io/circle-flags/flags/id.svg",
+                "capital": "Palu",
+                "image": "/images/oceania/palu.jpg"
+              }
+            ]
         }
     ]
 }
