@@ -6,7 +6,7 @@ import { ItemProps } from "./types";
 
 export function Gallery({ items }: ItemProps) {
     return (
-        <SimpleGrid width="100%" columns={4} spacing="16" my="8">
+        <SimpleGrid width="100%" columns={[1, 4]} spacing="16" my="8">
             {items.map((item) => (
                 <Item
                     key={item.id}

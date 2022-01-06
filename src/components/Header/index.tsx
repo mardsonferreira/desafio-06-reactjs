@@ -18,12 +18,12 @@ export function Header() {
             >
                 {asPath !== "/" && (
                     <ChevronLeftIcon
-                        boxSize={12}
+                        boxSize={[8, 12]}
                         cursor="pointer"
                         color={theme.colors.gray[300]}
                         position="absolute"
-                        top="12"
-                        left="28"
+                        top={["7", "12"]}
+                        left={["2", "28"]}
                     />
                 )}
                 <Image

@@ -6,6 +6,7 @@ import {
     Heading,
     theme,
     Tooltip,
+    useBreakpointValue,
 } from "@chakra-ui/react";
 import { InfoOutlineIcon } from "@chakra-ui/icons";
 
@@ -42,22 +43,30 @@ export interface ContinentProps {
 }
 
 export default function Continent({ continent }: ContinentProps) {
+    const isWideVersion = useBreakpointValue({
+        base: false,
+        md: false,
+        lg: true,
+    });
+
     return (
         <Flex direction="column">
             <Header />
 
             <Flex
-                backgroundImage={`url(${continent.banner})`}
-                backgroundRepeat="no-repeat"
-                backgroundPosition="center"
-                backgroundSize="cover"
+                bgImage={`url(${continent.banner})`}
+                bgRepeat="no-repeat"
+                bgPosition="center"
+                bgSize="cover"
                 w="100%"
                 h="500px"
-                alignItems="flex-end"
+                direction="column-reverse"
+                justifyContent={["center", "flex-start"]}
+                alignItems={["center", "flex-start"]}
             >
                 <Heading
-                    mb="16"
-                    ml="32"
+                    mb={[null, "16"]}
+                    ml={[null, "32"]}
                     fontSize="48"
                     fontWeight="semibold"
                     color={theme.colors.gray[300]}
@@ -66,34 +75,37 @@ export default function Continent({ continent }: ContinentProps) {
                 </Heading>
             </Flex>
 
-            <Flex direction="column" mx="32">
+            <Flex direction="column" mx={["4", "32"]}>
                 <Flex
+                    direction={["column", "row"]}
                     justifyContent="space-between"
                     alignItems="center"
-                    my="16"
+                    my={["8", "16"]}
                 >
                     <Text
-                        width="50%"
+                        width={["100%", "50%"]}
                         textAlign="justify"
-                        fontSize="24"
+                        fontSize={["14", "24"]}
                         fontWeight="regular"
                         color={theme.colors.green[900]}
                     >
                         {continent.description}
                     </Text>
 
+                    {!isWideVersion && <Box my="4" />}
+
                     <Stack direction="row" spacing="16">
                         <Box>
                             <Heading
-                                fontSize="48"
+                                fontSize={["24", "48"]}
                                 fontWeight="semibold"
                                 color={theme.colors.yellow[500]}
                             >
                                 {continent.totalCountries}
                             </Heading>
                             <Text
-                                fontSize="24"
-                                fontWeight="semibold"
+                                fontSize={["18", "24"]}
+                                fontWeight={["regular", "semibold"]}
                                 color={theme.colors.green[900]}
                             >
                                 países
@@ -101,15 +113,15 @@ export default function Continent({ continent }: ContinentProps) {
                         </Box>
                         <Box>
                             <Heading
-                                fontSize="48"
+                                fontSize={["24", "48"]}
                                 fontWeight="semibold"
                                 color={theme.colors.yellow[500]}
                             >
                                 {continent.totalLanguages}
                             </Heading>
                             <Text
-                                fontSize="24"
-                                fontWeight="semibold"
+                                fontSize={["18", "24"]}
+                                fontWeight={["regular", "semibold"]}
                                 color={theme.colors.green[900]}
                             >
                                 línguas
@@ -117,7 +129,7 @@ export default function Continent({ continent }: ContinentProps) {
                         </Box>
                         <Box>
                             <Heading
-                                fontSize="48"
+                                fontSize={["24", "48"]}
                                 fontWeight="semibold"
                                 color={theme.colors.yellow[500]}
                             >
@@ -125,8 +137,8 @@ export default function Continent({ continent }: ContinentProps) {
                             </Heading>
                             <Flex alignItems="center">
                                 <Text
-                                    fontSize="24"
-                                    fontWeight="semibold"
+                                    fontSize={["18", "24"]}
+                                    fontWeight={["regular", "semibold"]}
                                     color={theme.colors.green[900]}
                                 >
                                     cidades +100
