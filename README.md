@@ -21,7 +21,7 @@
  - <a href="https://yarnpkg.com/">Yarn</a>
 
 **Steps**
- - Clone the project and go to the folder: `$ git clone https://github.com/mardsonferreira/desafio-o6-reactjs.git && cd desafio-06-reactjs`.
+ - Clone the project and go to the folder: `$ git clone https://github.com/mardsonferreira/desafio-06-reactjs.git && cd desafio-06-reactjs`.
  - Install dependencies: `$ yarn`
  - Run fake api server: `$ yarn server`
  - Run web server: `$ yarn dev`
