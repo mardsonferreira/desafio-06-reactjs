@@ -1,6 +1,5 @@
 import {
     Flex,
-    Box,
     Text,
     Image,
     theme,
@@ -12,34 +11,38 @@ import {
 export function Banner() {
     const isWideVersion = useBreakpointValue({
         base: false,
-        lg: true,
+        md: false,
+        lg: false,
+        xl: true
     });
 
     return (
         <Flex
             width="100%"
-            justifyContent="center"
+            justifyContent="start"
             backgroundImage="url('/images/Background.svg')"
             backgroundRepeat="no-repeat"
             backgroundSize="cover"
             align="center"
-            px="36"
-            py="16"
+            px={["8", "36"]}
+            py={["8", "16"]}
         >
-            <Stack spacing="5" width="100%">
+            <Stack spacing="5" width="100%" maxW="512px">
                 <Heading
                     fontSize={["20", "36"]}
                     fontWeight="medium"
                     color={theme.colors.gray[50]}
                 >
                     5 Continentes,
-                    <br />
-                    infinitas possibilidades.
+                    <Text>infinitas possibilidades.</Text>
                 </Heading>
-                <Text fontSize={["12", "20"]} color={theme.colors.gray[300]}>
-                    Chegou a hora de tirar do papel a viagem que você
-                    <br />
-                    sempre sonhou.
+                <Text
+                    fontSize={["12", "20"]}
+                    fontWeight="regular"
+                    color={theme.colors.gray[300]}
+                >
+                    Chegou a hora de tirar do papel a viagem que você sempre
+                    sonhou.
                 </Text>
             </Stack>
             {isWideVersion && (

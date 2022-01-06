@@ -30,7 +30,11 @@ export default function Home({ continents }: HomeProps) {
             <Box w="20" h="2px" bg={theme.colors.gray[900]} mx="auto" my="4" />
 
             <Box my="8">
-                <Heading textAlign="center" fontSize={36} fontWeight="medium">
+                <Heading
+                    textAlign="center"
+                    fontSize={["20", "36"]}
+                    fontWeight="medium"
+                >
                     Vamos nessa?
                     <br />
                     Então escolha seu continente

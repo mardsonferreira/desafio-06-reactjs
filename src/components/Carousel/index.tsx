@@ -10,13 +10,7 @@ SwiperCore.use([Navigation, Pagination, Scrollbar]);
 
 export function Carousel({ continents }: Continents) {
     return (
-        <Flex
-            w="100%"
-            h={["250px", "450px"]}
-            mx="auto"
-            px="36"
-            mb={["5", "10"]}
-        >
+        <Flex w="100%" h={["250px", "450px"]} px={[null, null, null, "36"]} mb={["5", "10"]}>
             <Swiper
                 className="mySwiper"
                 slidesPerView={1}

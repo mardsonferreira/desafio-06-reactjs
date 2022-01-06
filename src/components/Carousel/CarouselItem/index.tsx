@@ -19,14 +19,14 @@ export function CarouselItem({ id, title, subtitle, url }: CarouselItemProps) {
                     bgSize="cover"
                 >
                     <Heading
-                        fontSize={48}
+                        fontSize={["24", "48"]}
                         fontWeight="bold"
                         color={theme.colors.gray[50]}
                     >
                         {title}
                     </Heading>
                     <Text
-                        fontSize={24}
+                        fontSize={["14", "24"]}
                         fontWeight="bold"
                         mt="1"
                         color={theme.colors.gray[50]}
